@@ -25,6 +25,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class Serializer {
+    /** Default constructor. */
+    public Serializer() {}
     public static byte[] serialize (Object obj) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(baos);
